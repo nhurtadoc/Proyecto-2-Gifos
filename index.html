@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="intro">
+        <p>¡Bienvenidos/as a Guifos.com!------Donde los gifs están.//////</p>
+    </div>
+    <div class="body">
+        <div class="header">
+            <div class="logo">
+                <img src="images/gifOF_logo.png"/>
+            </div>
+            <div class="options">
+                <button onclick="create()">Crear Gifos</button>
+                <button onclick="themes()">Elegir tema</button>
+                <div class="dropdown">
+                    <button id="theme" onclick="themes()">
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id= "dropdown-content" class="dropdown-content">
+                        <button onclick="white()">Sailor Day</button>
+                        <button onclick="dark()">Sailor Night</button>
+                    </div>
+                </div>
+                <a class= "mis_guifos" href="mis_guiffos.html">Mis Guifos</a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-tittle">
+                Buscar
+            </div>
+            <div class= "input-searching">
+                <input type="text" id="search"/>
+                <button id="button-search" onclick="searching()"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+            </div>
+        </div>
+        <div id="list-images"></div>
+        <div>
+            <input type="text" id="search-trendings" placeholder="Tendencias"/>
+        </div> 
+        <div id="trendings"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
