@@ -143,12 +143,54 @@ function uploadGuiffo() {
             setTimeout(function() {
                 document.getElementById("property").innerHTML = "Guifo Subido Con Exito";
                 document.getElementById('loader').style.display = 'none'; 
-                document.getElementById('video-uploader').style.display = 'block';
+                document.getElementById('video-uploader').style.display = 'grid';
                 document.getElementById('cancel').style.display = 'none';
                 document.getElementById('end').style.display = 'block';
                 }, 1000);
         });
 
+}
+
+function download() {
+
+    let blob = record.getBlob();
+
+    const vid = document.createElement('video');
+    vid.src = URL.createObjectURL(blob);
+    vid.controls = true;
+    document.body.appendChild(vid);
+    const a = document.createElement('a');
+    a.download = 'myvid.gif';
+    a.href = vid.src;
+    a.textContent = 'Descarga tu guifo';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    vid.remove();
+}
+
+function copy(){
+    let blob = record.getBlob();
+
+    const vid = document.createElement('video');
+    vid.src = URL.createObjectURL(blob);
+    vid.controls = true;
+    document.body.appendChild(vid);
+    const a = document.createElement('a');
+    a.download = 'myvid.gif';
+    a.href = vid.src;
+    a.textContent = 'Descarga tu guifo';    
+    var input = document.createElement("input");  
+    input.setAttribute("value", a.href);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy"); 
+    document.body.removeChild(input);    
+
+    alert('Link copiado');
+
+    a.remove();
+    vid.remove();
 }
 
 

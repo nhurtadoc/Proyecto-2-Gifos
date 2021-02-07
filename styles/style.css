@@ -175,6 +175,7 @@ a {
 
 #search-trendings {
     width: 99%;
+    margin-top: 20px;
 }
 
 #trendings {
@@ -357,9 +358,26 @@ ol > li:before {
 
 #canvas {
     padding-top: 20px;
+    margin-left: -20px;
 }
 
 #end {
     margin-top: 70px;
     margin-right: 30px;
+}
+
+#video-uploader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.video-uploader {
+    margin: 10px;
+}
+
+.video-uploader canvas {
+    width: 90%;
+}
+
+.video-uploader button {
+    width: 100%;
 }

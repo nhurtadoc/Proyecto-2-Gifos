@@ -11,6 +11,8 @@ async function searching() {
             htmlObject.innerHTML = img;
 
             document.getElementById('list-images').append (htmlObject);
+
+            document.getElementById('search-trendings').placeholder = document.getElementById('search').value;
         }
     }
 }
@@ -107,8 +109,7 @@ async function trendings() {
 
         htmlObject.innerHTML =  htmlObject.innerHTML + htmlObject2.innerHTML;
 
-        document.getElementById('trendings').append (htmlObject);
-        
+        document.getElementById('trendings').append (htmlObject);       
         
     }
     
