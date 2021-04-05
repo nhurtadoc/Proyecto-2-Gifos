@@ -40,13 +40,23 @@
             <div class= "input-searching">
                 <input type="text" id="search"/>
                 <button id="button-search" onclick="searching()"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+                <div id="suggestions" style="display: none;">
+                    <ul id="list-suggestions" class="possibilities">
+                        <li id="autocomplete" ></li>
+                        <li id="suggestions1" ></li>
+                        <li id="suggestions2" ></li>
+                    </ul>
+                </div>
             </div>
+            
         </div>
+        <div id="hashtags"></div>
         <div>
             <input type="text" id="search-trendings" placeholder="Tendencias"/>
+            <div id="list-images"></div>
+            <div id="trendings"></div>
         </div>
-        <div id="list-images"></div>
-        <div id="trendings"></div>
+        
     </div>
     <script src="js/index.js"></script>
 </body>

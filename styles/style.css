@@ -57,6 +57,34 @@ button {
     margin-bottom: 5px;
 }
 
+
+.possibilities li {
+    list-style-type: none;
+    border: 1px solid #808080;
+    margin-left: -40px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    margin-right: 115px;
+    background-color: #F0F0F0;
+}
+
+.possibilities li:hover {
+    background-color: #CBCBCB;
+    cursor: pointer;
+}
+
+#hashtags {
+    padding-top: 20px;
+
+}
+
+#hashtags button {
+    margin-right: 10px;
+    background-color: #4180F6;
+    color: white;
+    border: 1px solid #4C2F99;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -95,7 +123,6 @@ button {
     padding-bottom: 10px;
     background-color:#E6E6E6 ;
     padding-top: 10px;
-    height: 65px;
     box-shadow: 2px 2px 5px 0px rgba(180,180,180,1); 
     padding-top: 0;   
 }
